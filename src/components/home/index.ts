@@ -1,0 +1,8 @@
+export { default as Hero } from './Hero'
+export { default as CoreActions } from './CoreActions'
+export { default as QuickHelp } from './QuickHelp'
+export { default as ToolsSection } from './ToolsSection'
+export { default as ProceduresSection } from './ProceduresSection'
+export { default as RemindersSection } from './RemindersSection'
+export { default as LinksSection } from './LinksSection'
+export { default as SupportSection } from './SupportSection'
