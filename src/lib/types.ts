@@ -4,7 +4,7 @@ export interface ActionCard {
   icon: string
   href: string
   color?: 'blue' | 'emerald' | 'indigo' | 'slate'
-  shape?: 'circle' | 'rounded'
+  shape?: 'circle' | 'rounded' | 'none'
 }
 
 export interface Announcement {
@@ -15,6 +15,7 @@ export interface Announcement {
 
 export interface QuickHelpItem {
   question: string
+  description?: string
   icon: string
   variant?: 'blue' | 'slate' | 'indigo'
 }

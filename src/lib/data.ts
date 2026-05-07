@@ -27,7 +27,7 @@ export const coreActions: ActionCard[] = [
     icon: 'file-excel',
     href: '#',
     color: 'emerald',
-    shape: 'rounded'
+    shape: 'none'
   },
   {
     title: 'Check Case / Overview',
@@ -41,23 +41,26 @@ export const coreActions: ActionCard[] = [
     icon: 'clipboard-list',
     href: '#',
     color: 'blue',
-    shape: 'rounded'
+    shape: 'none'
   }
 ]
 
 export const quickHelpItems: QuickHelpItem[] = [
   {
     question: 'Amount doesn\'t match',
+    description: 'What to check',
     icon: 'dollar-sign',
     variant: 'blue'
   },
   {
     question: 'IP vs NIP',
+    description: 'Quick difference',
     icon: 'users',
     variant: 'slate'
   },
   {
     question: 'Duplicate payments',
+    description: 'What to do',
     icon: 'copy',
     variant: 'indigo'
   },

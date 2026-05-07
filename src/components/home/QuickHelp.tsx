@@ -22,22 +22,23 @@ export default function QuickHelp({ items }: QuickHelpProps) {
       </div>
       <p className="text-sm text-slate-500 mb-6">Answers to common questions.</p>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-2 shadow-sm space-y-1">
+      <div className="space-y-3">
         {items.map((item) => (
           <a
             key={item.question}
             href="#"
-            className="flex items-center justify-between p-3 hover:bg-slate-50 rounded-lg transition border-b border-gray-100 pb-4"
+            className="bg-white flex items-center justify-between p-4 hover:bg-slate-50 hover:border-blue-200 rounded-xl transition-all border border-gray-100 shadow-sm"
           >
             <div className="flex items-center space-x-4">
-              <div className={`w-10 h-10 rounded-full ${variantClasses[item.variant || 'blue']} flex items-center justify-center`}>
+              <div className={`w-10 h-10 rounded-full ${variantClasses[item.variant || 'blue']} flex items-center justify-center text-lg`}>
                 <FontAwesomeIcon icon={item.iconDef} />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-[#1a365d]">{item.question}</h4>
+                <h4 className="text-[15px] font-bold text-slate-800">{item.question}</h4>
+                {item.description && <p className="text-[13px] text-slate-500 mt-0.5">{item.description}</p>}
               </div>
             </div>
-            <FontAwesomeIcon icon={faChevronRight} className="text-slate-400 text-xs" />
+            <FontAwesomeIcon icon={faChevronRight} className="text-slate-400 text-sm" />
           </a>
         ))}
       </div>

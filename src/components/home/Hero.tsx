@@ -8,10 +8,10 @@ interface HeroProps {
 
 export default function Hero({ announcements }: HeroProps) {
   return (
-    <div className="hero-bg text-white px-8 py-16 relative">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
-        <div className="mb-8 md:mb-0 max-w-xl">
-          <h1 className="text-5xl font-bold mb-4">Operations Dashboard</h1>
+    <div className="hero-bg text-white px-8 pt-20 pb-28 relative">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="mb-8 md:mb-0 max-w-xl mt-4 md:-mt-8">
+          <h1 className="text-[42px] leading-tight font-bold mb-4 tracking-tight">Operations Dashboard</h1>
           <p className="text-lg text-slate-300">Post payments, validate cases, and access tools in seconds.</p>
         </div>
 

@@ -8,7 +8,7 @@ interface RemindersSectionProps {
 
 export default function RemindersSection({ reminders }: RemindersSectionProps) {
   return (
-    <div className="bg-blue-50/50 border border-blue-100 rounded-xl p-6">
+    <div className="bg-slate-50 border border-gray-100 rounded-2xl p-8 shadow-sm flex flex-col">
       <div className="flex items-center space-x-2 mb-4">
         <FontAwesomeIcon icon={faBell} className="text-[#1a365d] text-lg" />
         <h3 className="font-bold text-[#1a365d]">Daily Reminders</h3>

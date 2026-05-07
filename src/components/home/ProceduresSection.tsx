@@ -24,15 +24,15 @@ export default function ProceduresSection({ procedures }: ProceduresSectionProps
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {procedures.map((proc) => (
-          <a key={proc.title} href="#" className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition flex items-start space-x-4">
+          <a key={proc.title} href="#" className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-100 transition-all flex items-start space-x-4">
             <div className={`${colorClasses[proc.color || 'indigo']} text-3xl`}>
               <FontAwesomeIcon icon={proc.iconDef} />
             </div>
             <div className="flex-1">
-              <h3 className="font-bold text-sm mb-1">{proc.title}</h3>
-              <p className="text-xs text-slate-500">{proc.description}</p>
+              <h3 className="font-bold text-[15px] text-slate-800 mb-1">{proc.title}</h3>
+              <p className="text-[13px] text-slate-500">{proc.description}</p>
             </div>
-            <div className="mt-auto self-end text-slate-600">
+            <div className="mt-auto self-end text-slate-400 hover:text-slate-600 transition-colors">
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </a>

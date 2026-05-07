@@ -67,14 +67,14 @@ function App() {
       <Nav />
       <Hero announcements={announcements} />
 
-      <div className="max-w-4xl mx-auto -mt-6 relative z-10 px-4">
-        <div className="bg-white rounded-lg shadow-md flex items-center px-4 py-3 border border-gray-200">
-          <FontAwesomeIcon icon={faMagnifyingGlass} className="text-slate-400 mr-3" />
-          <input type="text" placeholder="Search for documents, tools, and more..." className="w-full focus:outline-none text-slate-700 bg-transparent" />
+      <div className="max-w-4xl mx-auto -mt-10 relative z-10 px-4 w-full">
+        <div className="bg-white rounded-xl shadow-lg flex items-center px-6 py-4 border border-gray-100">
+          <FontAwesomeIcon icon={faMagnifyingGlass} className="text-slate-400 text-lg mr-4" />
+          <input type="text" placeholder="Search for documents, tools, and more..." className="w-full focus:outline-none text-slate-700 bg-transparent text-[15px]" />
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-8 py-12 space-y-12">
+      <main className="max-w-7xl mx-auto px-8 pt-8 pb-16 w-full space-y-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <CoreActions actions={actionsWithIcons} />
