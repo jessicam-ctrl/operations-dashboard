@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faShieldHalved,
   faBars,
   faMagnifyingGlass
 } from '@fortawesome/free-solid-svg-icons'
